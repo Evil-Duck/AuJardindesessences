@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^aujardindesessences.ch/$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.aujardindesessences.ch/$
+RewriteCond %{REQUEST_URI} !/
+RewriteRule (.*) /public [L]
